@@ -1,0 +1,61 @@
+
+body{
+    background-color: black;
+}
+/* Make the page responsive 
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body{
+    background-color: black;
+}
+ Add a shadow effect to the header 
+header {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 10px;
+}
+
+ Add animation to the nav links 
+nav a {
+  transition: all 0.2s ease-in-out;
+}
+nav a:hover {
+  color: #1abc9c;
+}
+
+ Style the sections 
+section {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+ Style the headings 
+h2 {
+  margin: 0;
+}
+
+ Style the list items 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  margin: 10px 0;
+}
+
+ Add a hover effect to the list items 
+ul li:hover {
+  background-color: #f9f9f9;
+}*/

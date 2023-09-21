@@ -1,0 +1,99 @@
+/* Responsive layout */
+.container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: black;
+}
+
+
+header {
+  background-color: whitesmoke;
+  align-content: center;
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+}
+.container-one,
+.container-two {
+    background-color: whitesmoke;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px;
+  box-shadow: 0 0 10px #5368ac;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.container-one:hover,
+.container-two:hover {
+  transform: translateY(-10px);
+  
+  box-shadow: 0 20px 20px  #5368ac;
+}
+
+/* Animated hover effect */
+h2 {
+  margin-top: 0;
+  font-size: 24px;
+  text-align: center;
+  color: black;
+  
+  transition: all 0.3s ease;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  
+}
+
+ul li {
+  margin: 10px 0;
+ 
+}
+
+ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5368ac;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+ul li a:hover {
+  background-color: #555;
+}
+
+.container-one:hover h2,
+.container-two:hover h2 {
+  color: black;
+}
+
+.container-one:hover ul li a,
+.container-two:hover ul li a {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Media queries for smaller screens
+*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+

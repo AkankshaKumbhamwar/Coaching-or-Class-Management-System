@@ -1,0 +1,101 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color:whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+h1{
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+    /* Input styles */
+    input[type=text], input[type=email], input[type=password], input[type=tel], select, textarea {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: none;
+      border-radius: 4px;
+      background-color: #5368ac;
+    }
+
+    /* Radio button styles */
+    input[type=radio] {
+      margin: 8px 0;
+      padding: 0 10px;
+    }
+
+    /* Submit button styles */
+    input[type=submit] {
+      background-color: #5368ac;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Submit button hover styles */
+    input[type=submit]:hover {
+      background-color: buttonface;
+    }
+
+    /* Animation styles */
+    label, input, select, textarea {
+      animation: fadein 1s;
+      -moz-animation: fadein 1s; /* Firefox */
+      -webkit-animation: fadein 1s; /* Safari and Chrome */
+      -o-animation: fadein 1s; /* Opera */
+    }
+
+    /* Keyframe for animation */
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @-moz-keyframes fadein { /* Firefox */
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes fadein { /* Safari and Chrome */
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @-o-keyframes fadein { /* Opera */
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  

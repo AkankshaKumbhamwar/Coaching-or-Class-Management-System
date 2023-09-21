@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- Basic -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- Site Metas -->
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+
+        <title>sgbau</title>
+
+        <!--        <link href="css/LoginCss.css" rel="stylesheet" />-->
+        <link href="css/regStud.css" rel="stylesheet">
+        <script>
+            function validatePhoneNumber() {
+                var phoneNumber = document.getElementById("phoneNumber").value;
+                if (phoneNumber.length !== 10) {
+                    document.getElementById("phoneNumberError").innerHTML = "Phone number must be 10 digits long!";
+                    return false;
+                }
+                document.getElementById("phoneNumberError").innerHTML = "";
+                return true;
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h1>
+                Register
+            </h1>
+
+            <form action="RegisterServlet" method="post">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first_name" required><br><br>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last_name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+               <label for="phone">Phone:</label>
+               <input type="text" id="phoneNumber" name="phone" oninput="validatePhoneNumber()" maxlength="10" required>
+<span id="phoneNumberError" style="color:red;"></span>
+                <br><br>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" maxlength="100" required></textarea><br><br>
+
+                <!--		<label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>-->
+
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label><br><br>
+
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">--Select a course--</option>
+                    <option value="Maths">Java</option>
+                    <option value="Science">Python</option>
+                    <option value="English">Web development</option>
+                </select>
+                <input type="submit" value="submit"> 
+            </form>
+        </div>
+
+    </body>
+
+</html>

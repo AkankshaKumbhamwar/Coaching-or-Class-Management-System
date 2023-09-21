@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>sgbau</title>
+        <link href="css/regStud.css" rel="stylesheet">
+        <script>
+            function validatePhoneNumber() {
+                var phoneNumber = document.getElementById("phoneNumber").value;
+                if (phoneNumber.length !== 10) {
+                    document.getElementById("phoneNumberError").innerHTML = "Phone number must be 10 digits long!";
+                    return false;
+                }
+                document.getElementById("phoneNumberError").innerHTML = "";
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+        <h1>Add new Faculty</h1>
+        <form action="addfaculty" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+            <br>
+            <label for="department">Department:</label>
+            <input type="text" name="department" id="department" required>
+            <br>
+            <label for="phone">Phone Number:</label>
+            <input type="text" name="phone" id="phoneNumber" oninput="ValidatePhoneNumber" maxlength="10" required>
+            <span id="phoneNumberError" style="color:red;"></span>
+            <br>
+            <br>
+            <label>Address:</label>
+            <input type="text" name="address" id="address" required>
+            <input type="submit" value="AddFaculty">
+        </form>
+        </div>
+    </body>
+</html>
